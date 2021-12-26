@@ -1,5 +1,40 @@
-<header>
-  <div class="container">
-    <a class="logo link" href="">The first</a>
+<!-- HEADER -->
+<header class="header section">
+  <div class="header__container container">
+    <a class="logo link" href="">
+      <picture>
+        <source
+          media="(min-width:1920px)"
+          srcset="images/img-header/logo-hd-1x-min.jpg 1x, images/img-header/logo-hd-2x-min.jpg 2x"
+        />
+        <source
+          media="(min-width:1024px)"
+          srcset="
+            images/img-header/logo-desk-1x-min.jpg 1x,
+            images/img-header/logo-desk-2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            images/img-header/logo-tabl-1x-min.jpg 1x,
+            images/img-header/logo-tabl-2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width:320px)"
+          srcset="
+            images/img-header/logo-mob-1x-min.jpg 1x,
+            images/img-header/logo-mob-2x-min.jpg 2x
+          "
+        />
+        <img src="images/img-header/logo-hd-1x-min.jpg" alt="Логотип НКУ" />
+      </picture>
+    </a>
   </div>
+  <button type="button" class="menu-open-btn">
+    <svg class="header-btn__icon" width="30" height="22" aria-label="Переключатель мобильного меню">
+      <use class="header-btn__menu-mob" href="images/sprite.svg#icon-menu"></use>
+    </svg>
+  </button>
 </header>

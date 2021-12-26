@@ -10,11 +10,13 @@
 @import './utils/hidden';
 
 // BASE
-@import './base.scss/common';
-@import './base.scss/reset';
+@import './base/common';
+@import './base/reset';
 
 // COMPONENTS
 @import './components/container.scss';
 
 @import './example';
-@import './site-header';
+
+// LAYOUT
+@import './layout/site-header';
