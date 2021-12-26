@@ -4,5 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './utils/mixin.scss';
+@import './components/container.scss';
 @import './example';
 @import './site-header';
