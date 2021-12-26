@@ -10,12 +10,10 @@
   }
 
   @include mq(tablet) {
-    width: 768px;
-
+    width: 708px;
   }
   @include mq(desktop) {
     width: 960px;
-
   }
   @include mq(hd) {
     width: 1140px;
