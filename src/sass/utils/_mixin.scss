@@ -6,7 +6,8 @@
 @mixin mq($range) {
   $mobile: 320px;
   $tablet: 768px;
-  $desktop: 1170px;
+  $desktop: 960px;
+  $hd: 1140px;
 
   @if $range == mobile-only {
     @media (max-width: #{$tablet - 0.02} ) {
@@ -30,6 +31,10 @@
     }
   } @else if $range == not-desktop {
     @media (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $range == hd {
+    @media (min-width: $hd) {
       @content;
     }
   }

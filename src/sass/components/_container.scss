@@ -3,6 +3,7 @@
   padding-right: 15px;
   margin: 0 auto;
   width: 100%;
+  outline: 1px solid red;
 
   @include mq(mobile) {
     width: 320px;
@@ -14,8 +15,11 @@
     padding-right: 45px;
   }
   @include mq(desktop) {
-    width: 1170px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include mq(hd) {
+    width: 1140px;
   }
 }
