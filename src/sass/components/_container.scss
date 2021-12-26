@@ -11,13 +11,11 @@
 
   @include mq(tablet) {
     width: 768px;
-    padding-left: 45px;
-    padding-right: 45px;
+
   }
   @include mq(desktop) {
     width: 960px;
-    padding-left: 15px;
-    padding-right: 15px;
+
   }
   @include mq(hd) {
     width: 1140px;
